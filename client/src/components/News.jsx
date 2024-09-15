@@ -18,7 +18,7 @@ const News = () => {
       setError(null);
       
       try {
-        const response = await fetch(`http://localhost:3000/all-news?page=${page}&pageSize=${pageSize}`);
+        const response = await fetch(`https://news-aggregator-xts7.vercel.app/all-news?page=${page}&pageSize=${pageSize}`);
         
         if (!response.ok) {
           throw new Error('Network response was not ok');
