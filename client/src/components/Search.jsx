@@ -22,7 +22,7 @@ const Search = () => {
       try {
         const query = param.query ? `?q=${param.query}` : "";
         console.log(query);
-        const response = await fetch(`http://localhost:3000/top-headlines${query}&page=${page}&pageSize=${pageSize}`);
+        const response = await fetch(`https://news-aggregator-xts7.vercel.app/top-headlines${query}&page=${page}&pageSize=${pageSize}`);
         
         if (!response.ok) {
           throw new Error('Network response was not ok');
